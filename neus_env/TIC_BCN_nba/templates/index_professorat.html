@@ -3,6 +3,7 @@
 <head>
 </head>
 <body>
+  {% include "head/header.html" %}
     
   <h1>INFORMACIÓ PROFESSORAT TIC BARCELONA</h1>
     <table>
@@ -13,7 +14,6 @@
           <th>Cognom2</th>
           <th>Correu</th>
           <th>Curs</th>
-          <th>Tutor</th>
           <th>Mòduls</th>
         </tr>
       </thead>
@@ -25,7 +25,6 @@
           <td>{{ v.cognom2 }}</td>
           <td>{{ v.correu }}</td>
           <td>{{ v.curs }}</td>
-          <td>{{ v.tutor }}</td>
           <td>{{ v.mod }}</td>
         </tr>
         {% endfor %}
