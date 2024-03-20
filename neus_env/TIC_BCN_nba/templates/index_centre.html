@@ -4,6 +4,11 @@
 </head>
 <body>
     {% include "head/header.html" %}
-    
+    <a href="{% url 'index_profes' %}">Professorat</a>
+    <a href="{% url 'index_alumnat' %}">Alumnat</a>
+    <a href="{% url 'user-form' %}">Afegir usuaris</a>
     <h1>Primer projecte - app Centre</h1>
     <p>Benvinguts a la primera app Centre!</p>
+
+{% block content %}
+{% endblock %}
